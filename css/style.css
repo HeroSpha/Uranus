@@ -967,3 +967,65 @@ a:focus {
   color: inherit;
 }
 /*# sourceMappingURL=style.css.map */
+
+.slider_section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full screen height */
+  overflow: hidden;
+}
+
+.slider_bg_box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* Ensure video is behind the content */
+  overflow: hidden;
+}
+
+.slider_bg_box video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  background-size: cover;
+}
+
+.carousel {
+  position: relative;
+  z-index: 1; /* Ensure content appears on top of the video */
+}
+
+.detail-box { /* Ensure text is visible on the video background */
+  padding: 20px;
+  /* Optional: Add a semi-transparent background for better text visibility */
+  border-radius: 10px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column; /* Stack image and text vertically */
+}
+
+.img-box {
+  width: 100%; /* Make the image container full-width */
+  overflow: hidden; /* Ensure any overflowing content is hidden */
+
+}
+
+.img-box img {
+  width: 100%; /* Make the image cover the full width of its container */
+  height: auto; /* Maintain the aspect ratio */
+  display: block; /* Remove any extra space below the image */
+}
+
+.detail-box {
+  padding: 15px; /* Add padding to the text section */
+  text-align: center; /* Center-align text */
+}

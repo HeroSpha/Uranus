@@ -33,6 +33,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
 
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+
+    <!-- AOS JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+
     <!-- font awesome style -->
     <link href="css/font-awesome.min.css" rel="stylesheet" />
 
@@ -113,7 +120,10 @@
       <!-- slider section -->
       <section class="slider_section">
         <div class="slider_bg_box">
-          <img src="images/slider-bg.jpg" alt="" />
+          <video autoplay muted loop playsinline>
+            <source src="images/video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
         <div id="customCarousel1" class="carousel slide" data-ride="carousel">
           <div class="carousel-inner">
@@ -148,9 +158,7 @@
                         instrumentation equipment for accurate measurement and
                         control.
                       </p>
-                      <div class="btn-box">
-                        <a href="" class="btn1"> Get A Quote </a>
-                      </div>
+                      
                     </div>
                   </div>
                 </div>
@@ -218,7 +226,7 @@
 
     <!-- service section -->
 
-    <section class="service_section layout_padding">
+    <section class="service_section layout_padding" >
       <div class="service_container">
         <div class="container">
           <div class="heading_container">
@@ -232,10 +240,10 @@
             </p>
           </div>
           <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
               <div class="box">
-                <div class="img-box">
-                  <img src="images/mining.svg" alt="" />
+                <div class="img-box" style="width: 100%; height: 300px;">
+                  <img src="images/mining.jpg" alt="" />
                 </div>
                 <div class="detail-box">
                   <h5>Mining Supplies</h5>
@@ -250,10 +258,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
               <div class="box">
-                <div class="img-box">
-                  <img src="images/mineral.svg" alt="" />
+                <div class="img-box" style="width: 100%; height: 300px;">
+                  <img src="images/mineral.jpg" alt="" />
                 </div>
                 <div class="detail-box">
                   <h5>Mineral Processing</h5>
@@ -267,10 +275,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
               <div class="box">
-                <div class="img-box">
-                  <img src="images/engineering.svg" alt="" />
+                <div class="img-box" style="width: 100%; height: 300px;">
+                  <img src="images/engineering.jpg" alt="" />
                 </div>
                 <div class="detail-box">
                   <h5>Engineering Services</h5>
@@ -285,10 +293,10 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
               <div class="box">
-                <div class="img-box">
-                  <img src="images/construction.svg" alt="" />
+                <div class="img-box" style="width: 100%; height: 300px;">
+                  <img src="images/construction.jpg" alt="" />
                 </div>
                 <div class="detail-box">
                   <h5>Civils & Construction</h5>
@@ -570,5 +578,11 @@
     <!-- Google Map -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
     <!-- End Google Map -->
+    <script>
+      AOS.init({
+        duration: 1000, // Animation duration
+        easing: 'ease-in-out', // Animation easing
+      });
+    </script>
   </body>
 </html>
